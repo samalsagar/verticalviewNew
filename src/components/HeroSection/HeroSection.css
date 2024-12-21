@@ -1,0 +1,12 @@
+.back{
+    /* background-color: #38105D; */
+    /* background: linear-gradient(45deg, #38105D, #9C3A85); */
+    /* background: radial-gradient(circle, #38105D, #9C3A85); */
+    background: linear-gradient(135deg, #38105D, #1B1464, #9C3A85);
+    height: 80vh;
+
+}
+
+#heroVideo{
+    width: 100%;
+}

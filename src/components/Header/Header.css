@@ -1,0 +1,19 @@
+/* General Button Styles */
+.circle {
+    height: 68px;
+    width: 68px;
+    margin-right: -35px;
+}
+
+.header-shadow {
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Mobile Screen Styles */
+@media (max-width: 640px) {
+    .circle {
+        margin-right: 3px;
+        height: 59px;
+        width: 62px;
+    }
+}
