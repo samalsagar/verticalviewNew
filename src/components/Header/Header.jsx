@@ -6,36 +6,42 @@ import human from '../../assets/humna.png';
 function Header() {
     return (
         <div>
-            <nav className="bg-purple-500 border-gray-200 dark:bg-purple-900 rounded-full font-bold font-mono shadow-sm shadow-purple-500">
-                <div className="max-w-screen-xl flex items-center justify-between">
-                    {/* Logo */}
-                    <img 
-                        src={logo} 
-                        alt="Logo" 
-                        className="bg-white rounded-full h-[9vh] w-auto sm:h-[8vh] md:h-[10vh] lg:h-[8vh] xl:h-[8vh] 2xl:h-[9vh] px-9 py-2" 
-                    />
-                    {/* Right Side Button */}
-                    <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse ml-auto"> {/* Align to the right for mobile */}
-                        {/* Button with centered icon */}
-                        <button 
-                            type="button" 
-                            className="circle rounded-full bg-white flex items-center justify-center -me-11">
-                            <img src={human} alt="Human Avatar" className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12" />
+
+
+            <nav class="bg-white border-gray-200 dark:bg-purple-900 rounded-full">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+                    <a href="" class="flex items-center">
+                        <img src={logo} class="h-12 bg-white head-logo -ms-10" alt="Logo" />
+                        {/* <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
+                    </a>
+                    <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button type="button" class="human-logo flex items-center justify-center text-sm bg-white rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                            {/* <span class="sr-only">Open user menu</span> */}
+                            <img class="h-10 w-10 bg-white rounded-full " src={human} alt="user photo" />
                         </button>
                     </div>
-                    {/* Menu */}
-                    <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                        <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-lg">
-                            <li><a href="#" className="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 header-shadow">About Us</a></li>
-                            <li><a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 header-shadow">Services</a></li>
-                            <li><a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 header-shadow">Projects</a></li>
-                            <li><a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 header-shadow">Achievements</a></li>
-                            <li><a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 header-shadow">Career</a></li>
-                            <li><a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 header-shadow">Contact Us</a></li>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-purple-900 dark:border-gray-700">
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Achievements</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Carrer</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact Us</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
         </div>
     );
 }

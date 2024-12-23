@@ -1,19 +1,60 @@
-/* General Button Styles */
-.circle {
-    height: 68px;
-    width: 68px;
-    margin-right: -35px;
+/* Header logo styling */
+.head-logo {
+    height: 60px; /* Responsive height */
+    width: 100vw;
+    padding-left: 40px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 35px;
+    max-width: 200px; /* Limit the maximum width */
 }
 
-.header-shadow {
-    text-shadow: 5px 5px 5px black;
+/* User icon styling */
+.human-logo {
+    height: 60px; /* Responsive icon size */
+    width: 60px;
+    border-radius: 50%; /* Circular icon */
+    margin-right: -36px;
 }
 
-/* Mobile Screen Styles */
-@media (max-width: 640px) {
-    .circle {
-        margin-right: 3px;
-        height: 59px;
-        width: 62px;
+/* Common styles for smaller screens (max-width: 1280px and below) */
+@media (max-width: 1280px) {
+    .head-logo {
+        padding-left: 24px;
+        padding-right: 16px;
+        margin-left: 1px;
+    }
+    .human-logo {
+        margin-right: 2px;
+    }
+}
+
+/* Styles for max-width: 1024px and below */
+@media (max-width: 1024px) {
+    .head-logo {
+        padding-left: 24px;
+        padding-right: 16px;
+    }
+}
+
+/* For screens below 768px */
+@media (max-width: 768px) {
+    .head-logo {
+        padding-left: 16px;
+        padding-right: 12px;
+    }
+}
+
+/* For even smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .head-logo {
+        padding-left: 32px;
+        padding-right: 20px;
+        width: 100vw;
+        margin-left: -10px;
+    }
+    .human-logo {
+        margin-right: 2px;
     }
 }

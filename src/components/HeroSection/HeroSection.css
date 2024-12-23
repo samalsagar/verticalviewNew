@@ -10,3 +10,31 @@
 #heroVideo{
     width: 100%;
 }
+
+
+.search-input {
+    position: relative; /* Ensures that the images are inside the input */
+    z-index: 1; /* Keeps the input field on top */
+    padding-left: 10px; /* Optional: Adjust padding to leave space for images */
+  }
+  
+  .image-container {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly; /* Evenly space out the images */
+    align-items: center; /* Center images vertically */
+    z-index: 0; /* Keeps the images inside the search input */
+  }
+  
+  .image {
+    /* max-width: 25px; 
+    max-height: 25px; */
+    object-fit: contain;
+  }
+
+  
+  
