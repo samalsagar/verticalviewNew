@@ -1,0 +1,14 @@
+.rightImage {
+  background-image: url("../../assets/Engineer.jpeg");
+  object-fit: contain;
+}
+
+.box {
+  box-shadow: 8px 8px 9px 1px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 8px 8px 9px 1px rgba(0,0,0,0.55);
+  -moz-box-shadow: 8px 8px 9px 1px rgba(0,0,0,0.55);
+}
+
+.main{
+    background: #f7f7f7;
+}
